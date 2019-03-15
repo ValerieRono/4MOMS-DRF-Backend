@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'formoms.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'tracker',
+        'NAME': 'babyhealthtracker',
         'USER': 'postgres',
         'PASSWORD': '',
         'HOST': 'localhost',
