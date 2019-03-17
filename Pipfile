@@ -10,9 +10,10 @@ django = "*"
 djangorestframework = "*"
 pillow = "*"
 psycopg2 = "*"
-djangorestframework-simplejwt = "*"
 django-heroku = "*"
 gunicorn = "*"
+django-rest-auth = "*"
+djangorestframework-jwt = "*"
 
 [requires]
 python_version = "3.7"
