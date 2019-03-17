@@ -17,8 +17,6 @@ before_script:
 
 script:
   - cd formoms
-  - python manage.py makemigrations
-  - python manage.py migrate
   - python manage.py test
   
 # after_success:
