@@ -1,1 +1,1 @@
-web: gunicorn formoms.formoms.wsgi
+web: gunicorn formoms.wsgi:application --pythonpath ./formoms
