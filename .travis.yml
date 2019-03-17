@@ -8,6 +8,6 @@ install:
 
 # command to run tests
 script: 
-  - python manage.py makemigrations --settings=formoms.settings.test
-  - python manage.py migrate --settings=formoms.settings.test 
+  - python ./manage.py makemigrations --settings=formoms.settings.test
+  - python ./manage.py migrate --settings=formoms.settings.test 
   
