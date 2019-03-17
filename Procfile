@@ -1,1 +1,1 @@
-web: gunicorn formoms.wsgi
+web: gunicorn run:app
