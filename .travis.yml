@@ -13,7 +13,8 @@ before_script:
   - psql -c 'create database formoms;' -U postgres
 
 script:
-  - python formoms.formoms.manage.py test
+  - cd formoms
+  - python manage.py test
   
 # after_success:
 #   - coveralls
