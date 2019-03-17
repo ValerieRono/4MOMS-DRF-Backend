@@ -1,1 +1,1 @@
-web: gunicorn 4MOMS-DRF-BACKEND.wsgi
+web: gunicorn 4MOMS-DRF-BACKEND.formoms.formoms.wsgi
