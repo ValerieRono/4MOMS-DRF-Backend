@@ -1,1 +1,1 @@
-web: gunicorn backend-4moms.wsgi
+web: gunicorn 4MOMS-DRF-BACKEND.wsgi
