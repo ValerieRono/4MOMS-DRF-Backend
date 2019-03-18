@@ -18,6 +18,3 @@ before_script:
 script:
   - cd formoms
   - python manage.py test
-  
-# after_success:
-#   - coveralls

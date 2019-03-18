@@ -48,7 +48,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'rest_auth',
-    'users.apps.UsersConfig'
+    'users.apps.UsersConfig',
+    'babies.apps.BabiesConfig',
 ]
 
 REST_FRAMEWORK = {
