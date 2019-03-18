@@ -29,7 +29,7 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
         model = User
         fields = ('url', 'id', 'username',
                   'password', 'first_name', 'last_name',
-                  'email'
+                  'email', 'babies'
                  )
         extra_kwargs = {
             'url' : {
