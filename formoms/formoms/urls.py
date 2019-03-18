@@ -28,4 +28,5 @@ urlpatterns = [
     path('api-token-verify/', verify_jwt_token),
     path('', include(('users.urls', 'users'), namespace='users')),
     path('', include(('babies.urls', 'babies'), namespace='babies')),
+    path('', include(('tracker.urls', 'tracker'), namespace='tracker'))
 ]
