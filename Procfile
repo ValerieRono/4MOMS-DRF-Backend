@@ -1,0 +1,1 @@
+web: gunicorn formoms.wsgi:application --pythonpath ./formoms
