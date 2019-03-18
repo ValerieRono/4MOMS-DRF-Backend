@@ -14,6 +14,7 @@ django-heroku = "*"
 gunicorn = "*"
 django-rest-auth = "*"
 djangorestframework-jwt = "*"
+django-environ = "*"
 
 [requires]
 python_version = "3.7"
