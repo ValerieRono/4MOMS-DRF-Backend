@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'rest_auth',
     'users.apps.UsersConfig',
     'babies.apps.BabiesConfig',
+    'tracker.apps.TrackerConfig'
 ]
 
 REST_FRAMEWORK = {
