@@ -2,6 +2,12 @@ from rest_framework import serializers
 from users.models import User
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
+    babies = serializers.HyperlinkedRelatedField(
+        many=True,
+        view_name='babies:baby-detail',
+        read_only=True
+    )
+    
     password = serializers.CharField(write_only=True)
 
     def create(self, validated_data):
