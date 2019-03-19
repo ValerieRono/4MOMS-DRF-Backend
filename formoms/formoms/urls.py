@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework_jwt.views import obtain_jwt_token, refresh_jwt_token, verify_jwt_token
+from rest_framework.documentation import include_docs_urls
 
 
 from formoms import views
@@ -28,5 +29,6 @@ urlpatterns = [
     path('api-token-verify/', verify_jwt_token),
     path('', include(('users.urls', 'users'), namespace='users')),
     path('', include(('babies.urls', 'babies'), namespace='babies')),
-    path('', include(('tracker.urls', 'tracker'), namespace='tracker'))
+    path('', include(('tracker.urls', 'tracker'), namespace='tracker')),
+    path('docs/', include_docs_urls(title='4MOMS', public=False))
 ]
