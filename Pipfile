@@ -15,6 +15,7 @@ gunicorn = "*"
 django-rest-auth = "*"
 djangorestframework-jwt = "*"
 django-environ = "*"
+coreapi = "*"
 
 [requires]
 python_version = "3.7"

@@ -6,5 +6,3 @@ urlpatterns = [
     path('babies/<slug:name>', views.TrackerList.as_view(), name='tracker-list'),
     path('babies/<slug:name>/<int:pk>', views.TrackerDetail.as_view(), name='tracker-detail')
 ]
-
-urlpatterns = format_suffix_patterns(urlpatterns)
