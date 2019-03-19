@@ -5,6 +5,7 @@ python:
 
 install:
   - pip install -r requirements.txt
+  - pip install coveralls
 
 services:
   - postgresql
@@ -12,9 +13,9 @@ services:
 addons:
   postgresql: "9.4"
 
-before_script:
-  - psql -c 'create database formoms;' -U postgres
-
 script:
   - cd formoms
-  - python manage.py test
+  - coverage run --source=formoms manage.py test
+
+after_success:
+  - coveralls
