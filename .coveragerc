@@ -1,6 +1,17 @@
+[run]
+include = ./*
+omit =
+   *env*
+   *migrations*
+   *tests*
+   *manage.py
+   *settings*
+   *home*
+branch = True
+
 [report]
 show_missing = True
-omit =
-    formoms/formoms/settings.py
-    formoms/formoms/wsgi.py
-    formoms/manage.py
+Collapse
+
+
+
