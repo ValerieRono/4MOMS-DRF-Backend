@@ -4,10 +4,10 @@ omit =
    *env*
    *migrations*
    *tests*
-   *manage.py
-   *settings*
-   /*
-   
+   manage.py
+   *settings.py
+   /
+
 branch = True
 
 [report]
