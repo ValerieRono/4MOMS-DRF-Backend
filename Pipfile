@@ -17,6 +17,7 @@ djangorestframework-jwt = "*"
 django-environ = "*"
 coreapi = "*"
 coveralls = "*"
+django-cors-headers = "*"
 
 [requires]
 python_version = "3.7"
