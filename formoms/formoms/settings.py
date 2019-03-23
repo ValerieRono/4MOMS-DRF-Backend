@@ -50,7 +50,8 @@ INSTALLED_APPS = [
     'rest_auth',
     'users.apps.UsersConfig',
     'babies.apps.BabiesConfig',
-    'tracker.apps.TrackerConfig'
+    'tracker.apps.TrackerConfig',
+    'corsheaders',
 ]
 
 REST_FRAMEWORK = {
@@ -97,6 +98,8 @@ JWT_AUTH = {
 }
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
